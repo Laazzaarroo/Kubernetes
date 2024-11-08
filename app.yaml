@@ -15,11 +15,11 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-activity-lazaro # Adjust this as needed
+  name: k8s-activity-lazaro # Use "lazaro" to identify
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 1 # Start with 1 replica to test if setup works
   selector:
     matchLabels:
       app: nginx
